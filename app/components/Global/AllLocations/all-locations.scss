@@ -1,0 +1,222 @@
+.locations {
+  &__nav {
+    width: 1120px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 114px 0 80px;
+
+    &-title {
+      text-align: center;
+      font-size: 12px;
+      line-height: 16px;
+      text-transform: uppercase;
+    }
+
+    &-cities {
+      position: relative;
+      width: 900px;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 16px 0 24px;
+      opacity: 0;
+      transform: translateY(-25px);
+    }
+
+    &-front {
+      position: absolute;
+      top: 16px;
+      left: 50%;
+      z-index: 1;
+      width: 350px;
+      margin-left: -175px;
+      background: #fff;
+
+      &-signature {
+        display: block;
+        font-size: 40px;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 50px;
+      }
+    }
+
+    &-back {
+      &-signature {
+        display: block;
+        line-height: 50px;
+        text-align: center;
+        font-size: 20px;
+        color: #DFDFDF;
+        text-transform: uppercase;
+      }
+
+      .slick-arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+        display: block;
+        width: 170px;
+        height: 100%;
+
+        &:before {
+          position: absolute;
+          top: 50%;
+          width: 16px;
+          height: 31px;
+          margin-top: -15px;
+          content: "";
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+
+        &.slick-prev {
+          left: 0;
+          background:
+            linear-gradient(to right, rgba(255,255,255,1) 0%,
+            rgba(255,255,255,1) 50%,
+            rgba(255,255,255,1) 52%,
+            rgba(255,255,255,0.96) 54%,
+            rgba(255,255,255,0) 100%);
+
+          &:before {
+            left: 50px;
+            background-image: url('~static/img/slider-arr-l.svg');
+          }
+        }
+
+        &.slick-next {
+          right: 0;
+          background:
+            linear-gradient(to left, rgba(255,255,255,1) 0%,
+            rgba(255,255,255,1) 50%,
+            rgba(255,255,255,1) 52%,
+            rgba(255,255,255,0.96) 54%,
+            rgba(255,255,255,0) 100%);
+
+          &:before {
+            right: 50px;
+            background-image: url('~static/img/slider-arr-r.svg');
+          }
+        }
+      }
+    }
+
+    &-places {
+      padding-top: 8px;
+      padding-bottom: 2px;
+      text-align: center;
+      white-space: nowrap;
+      border-top: 1px solid #000;
+      -webkit-overflow-scrolling: touch;
+      overflow: auto;
+      opacity: 0;
+    }
+
+    &-place {
+      position: relative;
+      display: inline-block;
+      margin: 0 10px;
+      padding: 10px;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #4AB7AE;
+      cursor: pointer;
+
+      &:after {
+        position: absolute;
+        height: 2px;
+        right: 10px;
+        bottom: -1px;
+        left: 10px;
+        content: "";
+        background-color: #4AB7AE;
+        transition: all .3s ease;
+      }
+
+      &:hover {
+        &:after {
+          right: 0;
+          left: 0;
+        }
+      }
+    }
+
+    &.animated-mode {
+      .locations__nav {
+        &-places {
+          transition: all .5s ease .5s;
+          opacity: 1;
+        }
+
+        &-cities,
+        &-place {
+          transition: all .5s ease 1s;
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+
+  @include r-max(1600) {
+    &__nav {
+      &-front {
+        &-signature {
+          font-size: 35px;
+        }
+      }
+
+      &-back {
+        &-signature {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  @include r-max(950) {
+    &__nav {
+      &-front {
+        left: 0;
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+  }
+
+  @include r-max(720) {
+    .locations__nav {
+      padding: 61px 0 15px;
+
+      &-title {
+        font-size: 10px;
+      }
+
+      &-front-signature {
+        font-size: 24px;
+        line-height: 24px;
+      }
+
+      &-cities {
+        padding: 5px 0 10px;
+      }
+    }
+  }
+
+  @include r-max(540) {
+    .locations__nav-back {
+      .slick-arrow {
+        width: 40px;
+
+        &.slick-prev:before {
+          left: 0;
+        }
+
+        &.slick-next:before {
+          right: 0;
+        }
+      }
+    }
+  }
+}

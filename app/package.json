@@ -1,0 +1,50 @@
+{
+  "name": "Manufaqtury",
+  "version": "1.0.0",
+  "description": "site",
+  "author": "Wormsoft",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@nuxtjs/apollo": "^4.0.0-rc19",
+    "@nuxtjs/axios": "^5.9.3",
+    "@nuxtjs/dotenv": "^1.4.0",
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "apollo-boost": "^0.4.7",
+    "core-js": "2.5.7",
+    "graphql": "^14.5.8",
+    "graphql-tag": "^2.10.1",
+    "jquery": "3.4.1",
+    "node-sass": "^4.13.1",
+    "nuxt": "^2.0.0",
+    "nuxt-express-module": "0.0.11",
+    "obvu-file-storage": "1.0.6",
+    "sass-loader": "^8.0.0",
+    "v-calendar": "^1.0.0-beta.23",
+    "v-mask": "^2.0.2",
+    "vue-apollo": "^3.0.2",
+    "vue-imask": "^6.0.1",
+    "vue-markdown": "2.2.4",
+    "vue-observe-visibility": "^0.4.6",
+    "vue-scrollto": "^2.17.1",
+    "vue-select": "^3.4.0",
+    "vue-slick": "^1.1.15",
+    "vue2-gmap-custom-marker": "^5.5.9",
+    "vue2-google-maps": "^0.10.7",
+    "vuelidate": "0.7.5"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^1.0.1",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^6.1.0",
+    "eslint-plugin-nuxt": ">=0.4.2"
+  }
+}

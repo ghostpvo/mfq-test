@@ -1,0 +1,29 @@
+{
+  "name": "Remote Schema",
+  "schemaPath": "remote-schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "Develop": {
+        "url": "https://api-dev.manufaqtury.s3.obvu.ru/graphql",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": true
+      },
+      "Production": {
+        "url": "https://api.manufaqtury.s3.obvu.ru/graphql",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": true
+      },
+      "Local": {
+        "url": "http://api.m.local/graphql",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": true
+      }
+    }
+  }
+}

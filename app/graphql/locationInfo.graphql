@@ -1,0 +1,12 @@
+#import "./fragments/locationAggregatedInfo.graphql"
+
+query getData ($locationSlug: String!) {
+  manufaqturySite {
+    crud {
+      locations: locations_aggregate (fullData: {slug: $locationSlug}) {
+        elements {
+          ...locationsAggregateInfo
+        }
+      }
+    }
+  }}

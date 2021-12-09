@@ -1,0 +1,37 @@
+#import "./fragments/fileInfo.graphql"
+
+query getData ($locationId: String!) {
+  manufaqturySite {
+    crud {
+      offices (fullData: {location: $locationId}) {
+        elements {
+          id
+          fullData{
+            title
+            photo{
+              ...fileInfo
+            }
+            filter_people_number
+            area
+            dscr
+            dream_office
+          }
+        }
+      }
+      event_hall (fullData: {location: $locationId}) {
+        elements {
+          id
+          fullData {
+            area
+            filter_people_number
+            title
+            dscr
+            photo {
+              ...fileInfo
+            }
+          }
+        }
+      }
+    }
+  }
+}

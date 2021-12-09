@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Fugue';
+  src: url('~static/fonts/Fugue-Regular.eot');
+  src: url('~static/fonts/Fugue-Regular.eot?#iefix') format('embedded-opentype'),
+  url('~static/fonts/Fugue-Regular.woff2') format('woff2'),
+  url('~static/fonts/Fugue-Regular.woff') format('woff'),
+  url('~static/fonts/Fugue-Regular.ttf') format('truetype'),
+  url('~static/fonts/Fugue-Regular.svg#Fugue-Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fugue New';
+  src: url('~static/fonts/new/Fugue-Regular.eot');
+  src: url('~static/fonts/new/Fugue-Regular.eot?#iefix') format('embedded-opentype'),
+  url('~static/fonts/new/Fugue-Regular.woff2') format('woff2'),
+  url('~static/fonts/new/Fugue-Regular.woff') format('woff'),
+  url('~static/fonts/new/Fugue-Regular.ttf') format('truetype'),
+  url('~static/fonts/new/Fugue-Regular.svg#Fugue-Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}

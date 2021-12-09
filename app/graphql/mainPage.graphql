@@ -1,0 +1,127 @@
+#import "./fragments/locationAggregatedInfo.graphql"
+#import "./fragments/fileInfo.graphql"
+
+query getData {
+  manufaqturySite {
+    crud {
+      mainpage_aggregate {
+        element {
+          fullData {
+            title
+            talks_room_title_1
+            talks_room_text_1
+            talks_room_title_2
+            talks_room_text_2
+            promo_offices_title_1
+            promo_offices_text_1
+            promo_offices_link_1
+            promo_offices_title_2
+            promo_offices_text_2
+            promo_offices_link_2
+            our_mission
+            for_developers_title
+            for_developers_text
+            for_developers_link
+            boutique_title
+            boutique_text
+            loyalty_title
+            loyalty_text
+            loyalty_link
+            events_locations_photo {
+              ...fileInfo
+            }
+          }
+        }
+      }
+      offices_info_block{
+        elements{
+          id
+          fullData{
+            text
+            title
+            link
+            photo{
+              ...fileInfo
+            }
+          }
+        }
+      }
+      boutique_block{
+        elements{
+          id
+          fullData{
+            text
+            title
+            link
+            photo{
+              ...fileInfo
+            }
+            logo {
+              ...fileInfo
+            }
+          }
+        }
+      }
+      squares_info_block{
+        elements{
+          fullData{
+            title
+            text
+            type
+          }
+        }
+      }
+      locations_aggregate{
+        elements {...locationsAggregateInfo}
+      }
+      metro {
+        elements {
+          id
+          fullData {
+            title
+          }
+        }
+      }
+      contacts {
+        element {
+          fullData {
+            email
+            facebook
+            instagram
+            phone
+            vk
+          }
+        }
+      }
+      misc_info {
+        element {
+          fullData {
+            presentation_offices {
+              ...fileInfo
+            }
+          }
+        }
+      }
+      dream_office_aggregate {
+        element {
+          fullData {
+            title
+            button_title
+            text
+            photo_1 {
+              ...fileInfo
+            }
+            photo_2 {
+              ...fileInfo
+            }
+            photo_3 {
+              ...fileInfo
+            }
+            photo_4 {
+              ...fileInfo
+            }
+          }
+        }
+      }
+    }
+  }}

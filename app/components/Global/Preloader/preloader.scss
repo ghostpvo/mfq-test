@@ -1,0 +1,65 @@
+body {
+  overflow: hidden;
+}
+
+.preloader {
+  height: 150px;
+  pointer-events: none;
+
+  &:before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 13;
+    @include sq(100%);
+    content: "";
+    pointer-events: none;
+    background-color: #fff;
+  }
+
+  &__intro-text {
+    color: #fff;
+    font-size: 1px;
+    pointer-events: none;
+  }
+
+  &__curtain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 14;
+    @include sq(100%);
+    background-color: #fff;
+  }
+
+  &__logo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 15;
+    margin: -24px 0 0 -160px;
+  }
+
+  &--hide {
+    height: 0;
+    transition: all .75s ease-out 2.5s;
+    overflow: hidden;
+
+    &:before {
+      opacity: 0;
+      transition: all .75s ease-out 2.5s;
+    }
+
+    .preloader {
+      &__logo {
+        opacity: 0;
+        transition: all .5s ease-out 2.5s;
+      }
+
+      &__curtain {
+        height: 0;
+        transition: all .75s ease-out 2.5s;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+query getDate {
+    manufaqturySite{
+        crud{
+            cities{
+                elements{
+                    id
+                    fullData{
+                        title
+                    }
+                }
+            }
+        }
+    }
+}

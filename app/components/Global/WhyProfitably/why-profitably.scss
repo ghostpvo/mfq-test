@@ -1,0 +1,509 @@
+.p {
+  padding: 57px 0 100px;
+
+  .blc-title {
+    padding: 0 17%;
+  }
+
+  &__sides {
+    display: flex;
+    margin-top: 50px;
+    padding-left: 13%;
+  }
+
+  &__bad {
+    position: relative;
+    width: 700px;
+
+    &:before {
+      position: absolute;
+      top: -14px;
+      right: 0;
+      content: "*";
+      font-size: 12px;
+      line-height: 14px;
+      color: #1D1D1D;
+    }
+
+    &-item {
+      padding: 1px 0;
+      line-height: 5px;
+      text-align: right;
+
+      &-p {
+        &1 {
+          .p__bad-text {
+            font-size: 10px;
+          }
+
+          .p__bad-graph {
+            height: 10px;
+            background-color: #4AB7AE;
+          }
+        }
+
+        &2 {
+          .p__bad-text {
+            font-size: 10px;
+          }
+
+          .p__bad-graph {
+            height: 21px;
+            background-color: #4AB7AE;
+          }
+        }
+
+        &3 {
+          .p__bad-text {
+            font-size: 12px;
+          }
+
+          .p__bad-graph {
+            height: 35px;
+            background-color: #4AB7AE;
+          }
+        }
+
+        &4 {
+          .p__bad-text {
+            font-size: 12px;
+          }
+
+          .p__bad-graph {
+            height: 38px;
+            background-color: #4AB7AE;
+          }
+        }
+
+        &5 {
+          .p__bad-text {
+            font-size: 12px;
+          }
+
+          .p__bad-graph {
+            height: 41px;
+            background-color: #4AB7AE;
+          }
+        }
+
+        &6 {
+          .p__bad-text {
+            font-size: 12px;
+          }
+
+          .p__bad-graph {
+            height: 46px;
+            background-color: #4AB7AE;
+          }
+        }
+
+        &7 {
+          .p__bad-graph {
+            height: 52px;
+            background-color: #4AB7AE;
+          }
+        }
+
+        &8 {
+          .p__bad-graph {
+            height: 53px;
+            background-color: #4AB7AE;
+          }
+        }
+
+        &9 {
+          .p__bad-graph {
+            height: 59px;
+            background-color: #4AB7AE;
+          }
+        }
+
+        &10 {
+          .p__bad-text {
+            font-size: 16px;
+          }
+
+          .p__bad-graph {
+            height: 151px;
+            background-color: #4AB7AE;
+          }
+        }
+
+        &11 {
+          .p__bad-text {
+            font-size: 16px;
+          }
+
+          .p__bad-graph {
+            height: 85px;
+            background-color: #32847D;
+          }
+        }
+
+        &12 {
+          .p__bad-text {
+            font-size: 16px;
+          }
+
+          .p__bad-graph {
+            height: 45px;
+            background-color: #32847D;
+          }
+        }
+
+        &13 {
+          .p__bad-text {
+            font-size: 16px;
+          }
+
+          .p__bad-graph {
+            height: 83px;
+            background-color: #32847D;
+          }
+        }
+      }
+    }
+
+    &-text {
+      display: inline-block;
+      vertical-align: middle;
+      padding-right: 8px;
+      font-size: 14px;
+      opacity: 0;
+      transform: translateX(-35px);
+    }
+
+    &-graph {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      width: 40%;
+      opacity: 0;
+    }
+
+    &-cat {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      margin-top: -10px;
+      font-size: 12px;
+      letter-spacing: 0.75px;
+      text-align: center;
+      line-height: 20px;
+    }
+  }
+
+  &__nice {
+    position: relative;
+    width: 544px;
+    margin-left: 32px;
+    border-top: 1px dotted #D0D1D1;
+    opacity: 0;
+    transform: translateX(-100px);
+
+    &-blk {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 256px;
+      height: 100%;
+      background-color: #093049;
+    }
+
+    &-logo {
+      position: absolute;
+      width: 100%;
+      height: 71px;
+      padding-top: 30px;
+      text-align: center;
+      background-color: #fff;
+
+      img {
+        width: 130px;
+      }
+
+      &:after {
+        position: absolute;
+        top: 5px;
+        right: 0;
+        bottom: 5px;
+        width: 2px;
+        content: "";
+        background-color: #E7E8E8;
+      }
+    }
+
+    &-text {
+      position: absolute;
+      top: calc(50% + 35px);
+      left: 0;
+      margin-top: -26px;
+      padding: 0 50px;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      letter-spacing: 0.44px;
+      color: #fff;
+    }
+
+    &:after {
+      position: absolute;
+      right: 288px;
+      bottom: 0;
+      left: 0;
+      content: "";
+      border-bottom: 1px dotted #D0D1D1;
+    }
+  }
+
+  &__profit {
+    position: absolute;
+    right: -192px;
+    width: 160px;
+    text-align: left;
+
+    &-title {
+      font-size: 16px;
+    }
+
+    &-money {
+      display: block;
+      margin-top: 5px;
+      font-size: 30px;
+      line-height: 1;
+    }
+
+    &-term {
+      font-size: 10px;
+    }
+  }
+
+  &__dscr {
+    padding: 28px 28px 0 17%;
+    font-size: 10px;
+    line-height: 26px;
+    letter-spacing: 0.44px;
+  }
+
+  &.animated-mode {
+    .p__bad-text,
+    .p__bad-graph {
+      @include show-it;
+    }
+
+    .p__nice {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @include r-max(1620) {
+    padding: 80px 0;
+
+    .blc-title {
+      padding: 0 10%;
+    }
+
+    &__sides {
+      margin-top: 48px;
+    }
+
+    &__bad {
+      width: 41%;
+      min-width: 420px;
+
+      &:before {
+        top: -9px;
+      }
+
+      &-item-p {
+        &1 {
+          .p__bad-graph {
+            height: 7px;
+          }
+        }
+
+        &2 {
+          .p__bad-graph {
+            height: 13px;
+          }
+        }
+
+        &3 {
+          .p__bad-graph {
+            height: 22px;
+          }
+        }
+
+        &4 {
+          .p__bad-graph {
+            height: 24px;
+          }
+        }
+
+        &5 {
+          .p__bad-graph {
+            height: 27px;
+          }
+        }
+
+        &6 {
+          .p__bad-graph {
+            height: 29px;
+          }
+        }
+
+        &7 {
+          .p__bad-graph {
+            height: 35px;
+          }
+        }
+
+        &8 {
+          .p__bad-graph {
+            height: 33px;
+          }
+        }
+
+        &9 {
+          .p__bad-graph {
+            height: 39px;
+          }
+        }
+
+        &10 {
+          .p__bad-graph {
+            height: 100px;
+          }
+        }
+
+        &11 {
+          .p__bad-graph {
+            height: 30px;
+          }
+        }
+
+        &12 {
+          .p__bad-graph {
+            height: 56px;
+          }
+        }
+
+        &13 {
+          .p__bad-graph {
+            height: 54px;
+          }
+        }
+      }
+
+      &-graph {
+        width: 35%;
+      }
+    }
+
+    &__nice {
+      width: 33.8%;
+      margin-left: 8px;
+
+      &-logo {
+        height: 48px;
+        padding-top: 24px;
+
+        img {
+          width: 92px;
+        }
+      }
+
+      &-blk {
+        width: 42.6%;
+      }
+
+      &-text {
+        top: calc(50% + 24px);
+        padding: 0 20px;
+        font-size: 14px;
+      }
+
+      &:after {
+        right: calc(42.6% + 8px);
+      }
+    }
+
+    &__dscr {
+      padding: 18px 28px 0 10%;
+    }
+  }
+
+  @include r-max(1150) {
+    padding: 43px 0;
+
+    &__sides {
+      padding-left: 5%;
+    }
+
+    &__nice {
+      width: 195px;
+
+      &-blk {
+        width: 145px;
+      }
+
+      &:after {
+        right: 153px;
+      }
+    }
+  }
+
+  @include r-max(800) {
+    &__bad {
+      min-width: 370px;
+
+      &-graph {
+        width: 25%;
+      }
+    }
+
+    &__profit {
+      right: -132px;
+      width: 110px;
+    }
+  }
+
+  @include r-max(745) {
+    .blc-title {
+      padding: 0 4.5vw;
+    }
+
+    &__dscr {
+      padding: 28px 4.5vw 0;
+      line-height: 1.6;
+    }
+
+    &__sides {
+      width: 100%;
+      padding-left: 4.5vw;
+      overflow: auto;
+    }
+
+    &__bad {
+      width: 420px;
+      min-width: 420px;
+
+      &-graph {
+        width: 130px;
+      }
+    }
+
+    &__nice {
+      min-width: 250px;
+
+      &__blk {
+        width: 160px;
+      }
+    }
+  }
+
+  @include r-max(680) {
+  }
+}

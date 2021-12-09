@@ -1,0 +1,378 @@
+.p {
+  padding: 100px 0 70px;
+  background-color: #093049;
+  overflow: hidden;
+
+  .blc-title {
+    padding: 0 10%;
+    color: #fff;
+  }
+
+  &__data {
+    position: relative;
+
+    &-wrap {
+      margin: 0 -29px;
+    }
+
+    &-item {
+      position: absolute;
+      z-index: 2;
+      width: 28.56%;
+      padding: 5.3% 1.5% 0;
+      color: #fff;
+
+      &:nth-child(1) {
+        top: 0;
+        left: 14.285%;
+
+        .p__data-title {
+          transition: all .5s ease-out 1.25s;
+        }
+
+        .p__data-text {
+          transition: all .5s ease-out 1s;
+        }
+      }
+
+      &:nth-child(2) {
+        top: 14.5vw;
+        left: 57.41%;
+
+        .p__data-title {
+          transition: all .5s ease-out 2s;
+        }
+
+        .p__data-text {
+          transition: all .5s ease-out 1.75s;
+        }
+      }
+    }
+
+    &-title {
+      opacity: 0;
+      transform: scale(1.35);
+
+      &-num {
+        font-size: 160px;
+        line-height: 160px;
+      }
+
+      &-per {
+        font-size: 40px;
+      }
+    }
+
+    &-text {
+      padding-top: 40px;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: 0.44px;
+      opacity: 0;
+      transform: translateY(25px);
+    }
+  }
+
+  &__deco {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0;
+
+    &-cell {
+      position: relative;
+      width: 14.285%;
+
+      img {
+        width: 100%;
+      }
+
+      &:before {
+        position: absolute;
+        top: 29px;
+        right: 0;
+        bottom: calc(100% - 29px);
+        width: 1px;
+        content: "";
+        background-color: #4AB7AE;
+        transition: all .5s ease;
+      }
+
+      &:after {
+        position: absolute;
+        right: calc(100% - 29px);
+        bottom: 0;
+        left: 29px;
+        height: 1px;
+        content: "";
+        background-color: #4AB7AE;
+        transition: all .5s ease .5s;
+      }
+
+      &:nth-child(2),
+      &:nth-child(7),
+      &:nth-child(12),
+      &:nth-child(15),
+      &:nth-child(16),
+      &:nth-child(17),
+      &:nth-child(18),
+      &:nth-child(19),
+      &:nth-child(20),
+      &:nth-child(21) {
+        &:after {
+          display: none;
+        }
+      }
+
+      &:nth-child(7),
+      &:nth-child(9),
+      &:nth-child(12),
+      &:nth-child(14),
+      &:nth-child(19),
+      &:nth-child(21) {
+        &:before {
+          display: none;
+        }
+      }
+
+      &:nth-child(16) {
+        .p__deco-slash {
+          display: none;
+        }
+      }
+    }
+
+    &-slash {
+      @include slash('slash-bright');
+      height: 60%;
+    }
+
+    &-r-slash {
+      @include slash('r-slash-bright');
+      height: 60%;
+    }
+  }
+
+  &.animated-mode {
+    .p__data-title {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .p__data-text {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .p__deco-cell {
+      &:before {
+        bottom: 29px;
+      }
+
+      &:after {
+        right: 29px;
+      }
+    }
+  }
+
+  @include r-max(1700) {
+    &__data-item {
+      padding-top: 4.3%;
+    }
+
+    &__data-text {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    &__deco-cell:nth-child(2) {
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  @include r-max(1500) {
+    &__data-item {
+      padding-top: 3%;
+    }
+  }
+
+  @include r-max(1400) {
+    padding: 80px 0;
+
+    &__data {
+      &-wrap {
+        margin: 0 64px;
+      }
+
+      &-title-num {
+        font-size: 120px;
+        line-height: 160px;
+      }
+
+      &-item {
+        width: 50%;
+
+        &:nth-child(1) {
+          left: 0;
+        }
+
+        &:nth-child(2) {
+          top: 16vw;
+          left: 50%;
+        }
+      }
+    }
+
+    &__deco {
+      &-cell {
+        width: 25%;
+        height: 16vw;
+
+        &:before {
+          top: 19px;
+          bottom: 19px;
+        }
+
+        img {
+          display: none;
+        }
+
+        &:nth-child(1),
+        &:nth-child(4),
+        &:nth-child(7),
+        &:nth-child(8),
+        &:nth-child(11),
+        &:nth-child(14),
+        &:nth-child(15),
+        &:nth-child(18),
+        &:nth-child(21) {
+          display: none;
+        }
+
+        &:nth-child(2),
+        &:nth-child(16) {
+          &:after {
+            top: 19px;
+            right: auto;
+            bottom: 19px;
+            left: 0;
+            width: 1px;
+            height: auto;
+            display: block;
+          }
+        }
+
+        &:nth-child(9) {
+          &:before {
+            right: auto;
+            left: 0;
+            display: block;
+          }
+        }
+
+        &:nth-child(16) {
+          .p__deco-slash {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  @include r-max(1200) {
+    &__data {
+      &-title-num {
+        line-height: 135px;
+      }
+    }
+  }
+
+  @include r-max(1100) {
+    &__deco-cell {
+      height: 21vw;
+    }
+
+    &__data-title-num {
+      line-height: 177px;
+    }
+
+    &__data-item:nth-child(2) {
+      top: 21vw;
+    }
+  }
+
+  @include r-max(990) {
+    .p__data-wrap {
+      margin: 0 25px;
+    }
+
+    &__data-title-num {
+      line-height: 155px;
+    }
+  }
+
+  @include r-max(910) {
+    &__data {
+      &-title-num {
+        line-height: 140px;
+      }
+
+      &-text {
+        font-size: 14px;
+      }
+    }
+  }
+
+  @include r-max(870) {
+    &__data {
+      &-title-num {
+        line-height: 130px;
+      }
+
+      &-text {
+        font-size: 12px;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  @include r-max(780) {
+    &__data {
+      &-title-num {
+        line-height: 120px;
+      }
+    }
+  }
+
+  @include r-max(740) {
+    padding: 40px 0;
+
+    .blc-title {
+      padding: 0 25px 25px;
+    }
+
+    &__data {
+      &-item {
+        position: static;
+        width: 100%;
+        padding: 20px 0 30px;
+        border-top: 1px solid #3A9595;
+      }
+
+      &-title-num {
+        line-height: 120px;
+      }
+
+      &-text {
+        padding-top: 10px;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+    }
+
+    &__deco {
+      display: none;
+    }
+  }
+}

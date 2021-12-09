@@ -1,0 +1,65 @@
+@mixin sq($s){
+  width: $s;
+  height: $s;
+};
+
+@mixin placeholder() {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::placeholder {
+    @content
+  }
+}
+
+@mixin slash($pic-key) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  z-index: 1;
+  height: 0;
+  font-size: 0;
+  transform: translate(-50%,-50%);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("~static/img/" + $pic-key + ".svg");
+}
+
+/* Media queries for responsive
+---------------------------- */
+@mixin r-min($screen) {
+  @media only screen and (min-width: $screen+'px') {
+    @content;
+  }
+}
+
+@mixin r-max($screen) {
+  @media only screen and (max-width: $screen+'px') {
+    @content;
+  }
+}
+
+@mixin r-min-max($from, $to) {
+  @media only screen and (min-width: $from+'px') and (max-width: $to+'px') {
+    @content;
+  }
+}
+
+// Animations
+@mixin show-it() {
+  opacity: 1;
+  transform: translate(0);
+}

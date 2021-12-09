@@ -1,0 +1,30 @@
+#import "./fragments/fileInfo.graphql"
+
+query getData {
+  manufaqturySite {
+    crud {
+      offices_aggregate {
+        element {
+          fullData {
+            form_photo {
+              ...fileInfo
+            }
+            residents_photo {
+              ...fileInfo
+            }
+          }
+          subEntity {
+            banner_block {
+              fullData {
+                image {
+                  fullUrl
+                }
+                alt
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

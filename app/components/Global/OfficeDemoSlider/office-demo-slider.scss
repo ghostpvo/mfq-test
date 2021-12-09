@@ -1,0 +1,116 @@
+.office-slider {
+  .slick {
+    &-track {
+      display: flex;
+    }
+
+    &-slide {
+      display: flex;
+      height: auto;
+
+      & > div {
+        width: 100%;
+      }
+    }
+
+    &-arrow {
+      top: 44px;
+      width: 20px;
+      height: 44px;
+      z-index: 1;
+      margin-left: 112px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 1;
+      transform: none;
+
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 30px;
+        height: 44px;
+        content: '';
+        transform: translateX(-50%);
+      }
+
+      &.slick-disabled {
+        opacity: 0.25;
+      }
+
+      @include r-max(1700) {
+        top: 23px;
+        width: 13px;
+        height: 40px;
+        margin-left: 6.4vw;
+      }
+
+      @include r-max(900) {
+        margin-left: 4.5vw;
+      }
+
+      @include r-max(700) {
+        top: calc(76.8vw + 30px + 40px); // высота картинки + отступа сверху + самой иконки
+        margin-top: 2.5vw;
+        margin-left: 0;
+      }
+
+      @include r-max(480) {
+        top: calc(93.8vw + 25px + 15px);
+      }
+    }
+
+    &-prev {
+      left: 4.2vw;
+      background-image: url("~static/img/slider-arr-l_white.svg");
+
+      @include r-min(2000) {
+        left: 80px;
+      }
+
+      @include r-max(1700) {
+        left: 48px;
+      }
+
+      @include r-max(1100) {
+        left: 15px;
+      }
+
+      @include r-max(700) {
+        left: 31px;
+      }
+
+      @include r-max(480) {
+        left: 16px;
+      }
+    }
+
+    &-next {
+      right: auto;
+      left: calc(5.7vw + 340px); // 340 - длина текста навигации, 5,7 - длина отступа как у стрелки слева + приблизительна длина самой стрелки
+      background-image: url("~static/img/slider-arr-r_white.svg");
+
+      @include r-min(2000) {
+        left: 450px;
+      }
+
+      @include r-max(1700) {
+        left: calc(63px + 17.5vw);
+      }
+
+      @include r-max(1100) {
+        left: calc(28px + 227px);
+      }
+
+      @include r-max(700) {
+        left: auto;
+        right: 31px;
+      }
+
+      @include r-max(480) {
+        right: 16px;
+      }
+    }
+  }
+}

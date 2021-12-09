@@ -1,0 +1,13 @@
+#import "./fragments/locationAggregatedInfo.graphql"
+
+query getDate($cityId: String )  {
+  manufaqturySite{
+    crud{
+      locations: locations_aggregate(fullData: {cities: $cityId}){
+        elements{
+          ...locationsAggregateInfo
+        }
+      }
+    }
+  }
+}

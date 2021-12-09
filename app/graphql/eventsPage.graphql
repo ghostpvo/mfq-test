@@ -1,0 +1,20 @@
+query getData {
+    manufaqturySite {
+        crud {
+            event_hall_aggregate {
+                element {
+                    subEntity {
+                        banner_block {
+                            fullData {
+                                image {
+                                    fullUrl
+                                }
+                                alt
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

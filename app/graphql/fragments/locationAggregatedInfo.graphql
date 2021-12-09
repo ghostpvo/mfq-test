@@ -1,0 +1,37 @@
+#import "./fileInfo.graphql"
+
+fragment locationsAggregateInfo on block_type_locations_aggregate {
+  id
+  fullData{
+    address
+    cities
+    description
+    geometry {
+      ...fileInfo
+    }
+    photo {
+      ...fileInfo
+    }
+    title
+    director_email
+    director_fb
+    director_instagram
+    director_fio
+    director_phone
+    director_vk
+  }
+  subEntity {
+    stories_block {
+      id
+      fullData {
+        description
+        photo {
+          ...fileInfo
+        }
+        title
+      }
+    }
+  }
+}
+
+

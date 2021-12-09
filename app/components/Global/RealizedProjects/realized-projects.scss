@@ -1,0 +1,71 @@
+.realized-projects {
+
+  .slick-track {
+    display: flex;
+    margin-left: 112px;
+
+    @include r-max(1700) {
+      margin-left: 6vw;
+    }
+
+    @include r-max(1100) {
+      margin-left: 6.4vw;
+    }
+
+    @include r-max(740) {
+      margin-left: 0;
+    }
+  }
+
+  .slick-slide {
+    display: flex;
+    height: auto;
+    width: 100%;
+    max-width: 58.35vw;
+    margin-left: 16px;
+    margin-right: 16px;
+
+    &:nth-child(2n+2) {
+      max-width: 28vw;
+
+      @include r-min(1920) {
+        max-width: 538px;
+      }
+
+      @include r-max(740) {
+        max-width: 100%;
+      }
+    }
+
+    & > div {
+      width: 100%;
+    }
+
+    @include r-min(1920){
+      max-width: 1120px;
+    }
+
+    @include r-max(1700) {
+      max-width: 57.5vw;
+    }
+
+    @include r-max(1100) {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    @include r-max(900) {
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+
+    @include r-max(740) {
+      max-width: 100%;
+    }
+
+    @include r-max(480) {
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+  }
+}

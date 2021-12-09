@@ -1,0 +1,368 @@
+.map-main {
+  position: relative;
+  margin-left: 112px;
+  overflow: hidden;
+
+  &__wrap {
+    margin-top: 64px;
+    font-size: 0;
+
+    .vue-map-container {
+      width: 140%;
+      height: 900px;
+      margin-left: -40%;
+    }
+
+    @include r-max(1700) {
+      margin-top: 38px;
+    }
+
+    @include r-max(1100) {
+      margin-top: 60px;
+    }
+
+    @include r-max(480) {
+      margin-top: 39px;
+    }
+  }
+
+  &__map {
+    object-fit: cover;
+  }
+
+  &__info {
+    position: absolute;
+    top: 50%;
+    right: 112px;
+    z-index: 2;
+    max-width: 688px;
+    width: 100%;
+    padding: 80px;
+    background-color: #FFF;
+    transform: translateY(-50%);
+
+    .blc-title {
+      display: block;
+      padding-bottom: 27px;
+      padding-left: 0;
+      letter-spacing: -1.5px;
+    }
+
+    .blc-dscr {
+      padding-bottom: 21px;
+
+      @include r-max(1700) {
+        padding-bottom: 16px;
+      }
+
+      @include r-max(480) {
+        padding-bottom: 20px;
+      }
+    }
+
+    @include r-max(1700) {
+      right: 6.4vw;
+      max-width: 544px;
+      padding: 56px 51px;
+    }
+
+    @include r-max(1100) {
+      position: static;
+      max-width: 92%;
+      padding: 0 4.5vw 60px;
+      transform: none;
+    }
+
+    @include r-max(600) {
+      max-width: 100%;
+    }
+
+    @include r-max(480) {
+      padding: 0 16px 40px;
+    }
+  }
+
+  &__contacts {
+    position: absolute;
+    top: 93px;
+    left: 144px;
+    z-index: 2;
+    max-width: 688px;
+    width: 100%;
+    padding: 100px 80px;
+    background-color: #FFF;
+
+    .blc-title {
+      padding: 0 0 24px;
+    }
+
+    &-soc {
+      padding: 24px 0;
+      border-bottom: 1px solid #000;
+
+      &-item {
+        display: inline-block;
+        margin-right: 22px;
+      }
+
+      &-link {
+        display: block;
+        @include sq(63px);
+        border-radius: 50%;
+        background-color: #C4C4C4;
+        background-position: 49% center;
+        background-repeat: no-repeat;
+        transition: all .3s ease;
+
+        &:hover {
+          background-color: #4AB7AE;
+        }
+      }
+
+      &--vk {
+        background-image: url("~static/img/soc-vk.svg");
+      }
+
+      &--fb{
+        background-image: url("~static/img/soc-fb.svg");
+      }
+
+      &--inst {
+        background-image: url("~static/img/soc-inst.svg");
+      }
+    }
+
+    &-form {
+      padding-top: 24px;
+
+      &-title {
+        padding-bottom: 24px;
+        font-size: 20px;
+        line-height: 160%;
+        letter-spacing: 0.44px;
+      }
+
+      .main-input {
+        padding-bottom: 32px;
+      }
+    }
+  }
+
+  .location-blc {
+    margin-bottom: 33px;
+
+    @include r-max(1700) {
+      margin-bottom: 30px;
+    }
+
+    @include r-max(480) {
+      margin-bottom: 34px;
+    }
+  }
+
+  &__contact {
+    display: flex;
+
+    &-item {
+      &:first-child {
+        margin-right: 50px;
+
+        @include r-max(1700) {
+          margin-right: 33px;
+        }
+
+        @include r-max(1100) {
+          margin-right: 60px;
+        }
+
+        @include r-max(500) {
+          margin-bottom: 4px;
+          margin-right: 0;
+        }
+      }
+    }
+
+    &-title {
+      display: block;
+      font-size: 16px;
+      line-height: 160%;
+      letter-spacing: 0.44px;
+
+      @include r-max(1700) {
+        font-size: 14px;
+      }
+
+      @include r-max(900) {
+        font-size: 12px;
+      }
+
+      @include r-max(500) {
+        display: inline-block;
+        padding-right: 3px;
+        font-size: 14px;
+
+        &:after {
+          content: ':';
+        }
+      }
+    }
+
+    &-main {
+      font-size: 20px;
+      line-height: 160%;
+      letter-spacing: 0.44px;
+
+      @include r-max(1700) {
+        font-size: 18px;
+      }
+
+      @include r-max(900) {
+        font-size: 16px;
+      }
+
+      @include r-max(480) {
+        display: inline-block;
+        font-size: 18px;
+      }
+    }
+
+    @include r-max(500) {
+      display: block;
+    }
+  }
+
+  &--contacts-page {
+    margin-top: 0;
+
+    .map-main {
+      &__info {
+        top: auto;
+        right: auto;
+        bottom: 228px;
+        left: 145px;
+        transform: none;
+      }
+
+      .vue-map-container {
+        height: 1538px;
+        margin-left: 0;
+        margin-right: -40%;
+      }
+    }
+
+    .map-main {
+      @include r-max(1700) {
+        &__info,
+        &__contacts {
+          left: 6.4vw;
+          max-width: 544px;
+          padding: 56px 51px;
+
+          .blc-title {
+            font-size: 30px;
+          }
+        }
+
+        &__info {
+          bottom: 130px;
+        }
+
+        .vue-map-container {
+          height: 1236px;
+          width: 150%;
+          margin-right: -50%;
+        }
+      }
+
+      @include r-max(1100) {
+        &__info-blocks {
+          display: flex;
+          padding-top: 40px;
+        }
+
+        &__info,
+        &__contacts {
+          position: static;
+          padding: 0 4.5vw 60px;
+          transform: none;
+        }
+
+        .vue-map-container {
+          height: 600px;
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+
+      @include r-max(870) {
+        &__info-blocks {
+          flex-direction: column-reverse;
+          flex-wrap: wrap;
+          padding-top: 15px;
+        }
+
+        &__info,
+        &__contacts {
+          width: 100%;
+        }
+      }
+
+      @include r-max(600) {
+        &__info,
+        &__contacts {
+          max-width: 100%;
+        }
+
+        .vue-map-container {
+          height: 480px;
+        }
+
+        &__contacts-soc-item {
+          margin-right: 20px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+
+        &__contacts-soc-link {
+          @include sq(56px);
+        }
+      }
+
+      @include r-max(480) {
+        &__info,
+        &__contacts {
+          padding: 0 16px 40px;
+        }
+
+        .vue-map-container {
+          height: 267px;
+        }
+      }
+    }
+  }
+
+  @include r-max(1100) {
+    margin-left: 0;
+
+    &__wrap {
+      .vue-map-container {
+        width: 100%;
+        height: 65vw;
+        margin-left: 0;
+
+        .vue-map {
+        }
+      }
+    }
+  }
+
+  @include r-max(520) {
+    &__wrap {
+      .vue-map-container {
+        height: 84vw;
+      }
+    }
+  }
+}

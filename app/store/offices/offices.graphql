@@ -1,0 +1,33 @@
+query getDate  {
+  manufaqturySite{
+    crud{
+      offices {
+        elements {
+          id
+          fullData {
+            title
+            dscr
+            filter_people_number
+            special
+            dream_office
+            hide
+            metro
+            location
+            area
+            photo{
+              fullUrl
+            }
+          }
+        }
+      }
+      locations {
+        elements{
+          id
+          fullData{
+            address
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+#import "./fileInfo.graphql"
+
+fragment locationsInfo on block_type_locations {
+  id
+  fullData{
+    address
+    cities
+    description
+    geometry {
+      ...fileInfo
+    }
+    photo {
+      ...fileInfo
+    }
+    title
+    director_email
+    director_fb
+    director_instagram
+    director_fio
+    director_phone
+    director_vk
+  }
+}

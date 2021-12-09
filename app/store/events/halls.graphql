@@ -1,0 +1,41 @@
+query getDate  {
+    manufaqturySite{
+        crud{
+            event_hall {
+                elements {
+                    id
+                    fullData {
+                        title
+                        mainSubtitle
+                        dscr
+                        link
+                        photo {
+                            fullUrl
+                        }
+                        location
+                        equipment
+                        filter_event_type
+                        filter_people_number
+                        area
+                    }
+                }
+            },
+            equipment {
+                elements {
+                    id
+                    fullData {
+                        title
+                    }
+                }
+            }
+            locations {
+                elements{
+                    id
+                    fullData{
+                        address
+                    }
+                }
+            }
+        }
+    }
+}

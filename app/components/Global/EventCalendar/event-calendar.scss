@@ -1,0 +1,199 @@
+.event-calendar {
+  .vc-container {
+    min-width: 380px;
+    border: none;
+    background: transparent;
+
+    .vc-grid-container.grid > .vc-grid-cell {
+      margin: 0;
+    }
+
+    @include r-max(1700) {
+      min-width: 348px;
+    }
+
+    @include r-max(900) {
+      min-width: 75%;
+      margin: 0 auto;
+    }
+
+    @include r-max(480) {
+      min-width: auto;
+      width: 100%;
+    }
+  }
+
+  .vc-header {
+    max-width: 367px;
+    padding-bottom: 17px!important;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #FFF;
+
+    @include r-max(1700) {
+      max-width: 335px;
+      padding-bottom: 12px!important;
+      margin-bottom: 5px;
+    }
+
+    @include r-max(900) {
+      max-width: 100%;
+    }
+
+    @include r-max(480) {
+      width: 95%;
+      padding-bottom: 10px!important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .vc-title {
+    font-family: 'Fugue', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.75px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #FFF;
+  }
+
+  .vc-arrows-container {
+    top: -3px;
+    max-width: 367px;
+
+    .vc-flex {
+      position: relative;
+
+      &:hover {
+        background-color: transparent;
+      }
+
+      &:before { // увеличение области захвата стрелочек
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        content: '';
+      }
+    }
+
+    .vc-svg-icon {
+      width: 14px;
+      height: 23px;
+
+      path {
+        color: #FFF;
+      }
+
+      @include r-max(480) {
+        height: 20px;
+      }
+    }
+
+    @include r-max(1700) {
+      max-width: 335px;
+      padding-top: 3px;
+    }
+
+    @include r-max(900) {
+      max-width: 100%;
+    }
+
+    @include r-max(480) {
+      padding: 3px 12px;
+    }
+  }
+  
+  .vc-weeks {
+    padding: 0!important;
+    margin-left: -12px;
+
+    .vc-weekday {
+      font-family: 'Fugue', sans-serif;
+      font-size: 12px;
+      color: #FFF;
+      font-weight: 400;
+      text-transform: capitalize;
+
+      @include r-max(1700) {
+        font-size: 11px;
+      }
+    }
+
+    @include r-max(1700) {
+      margin-left: -9px;
+    }
+
+    @include r-max(900) {
+      margin-left: 0;
+    }
+  }
+  
+  .vc-day {
+    .vc-day-content {
+      width: 32px;
+      height: 32px;
+      margin: 0;
+      font-family: 'Fugue', sans-serif;
+      font-size: 14px;
+      color: #FFF;
+      font-weight: 400;
+
+      &:hover,
+      &:focus {
+        border-radius: 0;
+      }
+
+      &:focus {
+        background-color: transparent;
+      }
+
+      @include r-max(1700) {
+        font-size: 11px;
+      }
+    }
+
+    .vc-highlights {
+      left: 50%;
+      width: 32px;
+      height: 32px;
+      transform: translateX(-50%);
+
+      .vc-highlight {
+        width: 32px;
+        height: 32px;
+        background-color: $blue;
+        border-radius: 0;
+      }
+    }
+  }
+
+  .vc-grid-cell {
+    margin: 14px 12px;
+
+    @include r-max(1700) {
+      margin: 11.5px 9px;
+    }
+
+    @include r-max(480) {
+      margin: 8px 4px;
+    }
+  }
+
+  .vc-popover-content {
+    background: #032338;
+    border-color: $dark-blue;
+
+    .vc-nav-container {
+      .focus\:vc-border-blue-600:focus {
+        border-color: $blue;
+      }
+
+      .hover\:vc-bg-gray-900:hover {
+        background: $dark-blue;
+      }
+
+      .vc-grid-cell {
+        margin: 6px;
+      }
+    }
+  }
+}

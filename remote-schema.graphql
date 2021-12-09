@@ -1,0 +1,1092 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+    query: QuerySchema
+}
+
+type CrudElement {
+    boutique_block(fullData: input_data_boutique_block, id: String, paginationData: pagination_type, sortData: sort_databoutique_block): crud_list_collection__boutique_block
+    cities(fullData: input_data_cities, id: String, paginationData: pagination_type, sortData: sort_datacities): crud_list_collection__cities
+    contacts(fullData: input_data_contacts, id: String, paginationData: pagination_type, sortData: sort_datacontacts): crud_list_collection__contacts
+    dream_office_aggregate(fullData: input_data_dream_office_aggregate, id: String, paginationData: pagination_type, sortData: sort_datadream_office_aggregate): crud_list_collection__dream_office_aggregate
+    equipment(fullData: input_data_equipment, id: String, paginationData: pagination_type, sortData: sort_dataequipment): crud_list_collection__equipment
+    event_hall(fullData: input_data_event_hall, id: String, paginationData: pagination_type, sortData: sort_dataevent_hall): crud_list_collection__event_hall
+    event_hall_aggregate(fullData: input_data_event_hall_aggregate, id: String, paginationData: pagination_type, sortData: sort_dataevent_hall_aggregate): crud_list_collection__event_hall_aggregate
+    locations(fullData: input_data_locations, id: String, paginationData: pagination_type, sortData: sort_datalocations): crud_list_collection__locations
+    locations_aggregate(fullData: input_data_locations_aggregate, id: String, paginationData: pagination_type, sortData: sort_datalocations_aggregate): crud_list_collection__locations_aggregate
+    mainpage_aggregate(fullData: input_data_mainpage_aggregate, id: String, paginationData: pagination_type, sortData: sort_datamainpage_aggregate): crud_list_collection__mainpage_aggregate
+    menu_element(fullData: input_data_menu_element, id: String, paginationData: pagination_type, sortData: sort_datamenu_element): crud_list_collection__menu_element
+    metro(fullData: input_data_metro, id: String, paginationData: pagination_type, sortData: sort_datametro): crud_list_collection__metro
+    misc_info(fullData: input_data_misc_info, id: String, paginationData: pagination_type, sortData: sort_datamisc_info): crud_list_collection__misc_info
+    offices(fullData: input_data_offices, id: String, paginationData: pagination_type, sortData: sort_dataoffices): crud_list_collection__offices
+    offices_aggregate(fullData: input_data_offices_aggregate, id: String, paginationData: pagination_type, sortData: sort_dataoffices_aggregate): crud_list_collection__offices_aggregate
+    offices_info_block(fullData: input_data_offices_info_block, id: String, paginationData: pagination_type, sortData: sort_dataoffices_info_block): crud_list_collection__offices_info_block
+    site_control(fullData: input_data_site_control, id: String, paginationData: pagination_type, sortData: sort_datasite_control): crud_list_collection__site_control
+    squares_info_block(fullData: input_data_squares_info_block, id: String, paginationData: pagination_type, sortData: sort_datasquares_info_block): crud_list_collection__squares_info_block
+}
+
+type CrudFieldFile {
+    cropData: [file_crop_data]
+    fileId: String
+    fullUrl: String
+}
+
+type KeyValueGraphQL {
+    key: String
+    value: String
+}
+
+type Query {
+    crud: CrudElement
+}
+
+type QuerySchema {
+    manufaqturySite: Query
+}
+
+type block_type_advantages {
+    elementMiscData: [KeyValueGraphQL]
+    fullData: full_data_advantages
+    id: String
+    type: String
+}
+
+type block_type_banner_block {
+    elementMiscData: [KeyValueGraphQL]
+    fullData: full_data_banner_block
+    id: String
+    type: String
+}
+
+type block_type_boutique_block {
+    elementMiscData: [KeyValueGraphQL]
+    fullData: full_data_boutique_block
+    id: String
+    type: String
+}
+
+type block_type_cities {
+    elementMiscData: [KeyValueGraphQL]
+    fullData: full_data_cities
+    id: String
+    type: String
+}
+
+type block_type_contacts {
+    elementMiscData: [KeyValueGraphQL]
+    fullData: full_data_contacts
+    id: String
+    type: String
+}
+
+type block_type_dream_office_aggregate {
+    elementMiscData: [KeyValueGraphQL]
+    fullData: full_data_dream_office_aggregate
+    id: String
+    subEntity: sub_entity_dream_office_aggregate
+    type: String
+}
+
+type block_type_equipment {
+    elementMiscData: [KeyValueGraphQL]
+    fullData: full_data_equipment
+    id: String
+    type: String
+}
+
+type block_type_event_hall {
+    elementMiscData: [KeyValueGraphQL]
+    fullData: full_data_event_hall
+    id: String
+    type: String
+}
+
+type block_type_event_hall_aggregate {
+    elementMiscData: [KeyValueGraphQL]
+    fullData: full_data_event_hall_aggregate
+    id: String
+    subEntity: sub_entity_event_hall_aggregate
+    type: String
+}
+
+type block_type_locations {
+    elementMiscData: [KeyValueGraphQL]
+    fullData: full_data_locations
+    id: String
+    type: String
+}
+
+type block_type_locations_aggregate {
+    elementMiscData: [KeyValueGraphQL]
+    fullData: full_data_locations_aggregate
+    id: String
+    subEntity: sub_entity_locations_aggregate
+    type: String
+}
+
+type block_type_mainpage_aggregate {
+    elementMiscData: [KeyValueGraphQL]
+    fullData: full_data_mainpage_aggregate
+    id: String
+    subEntity: sub_entity_mainpage_aggregate
+    type: String
+}
+
+type block_type_menu_element {
+    elementMiscData: [KeyValueGraphQL]
+    fullData: full_data_menu_element
+    id: String
+    type: String
+}
+
+type block_type_metro {
+    elementMiscData: [KeyValueGraphQL]
+    fullData: full_data_metro
+    id: String
+    type: String
+}
+
+type block_type_misc_info {
+    elementMiscData: [KeyValueGraphQL]
+    fullData: full_data_misc_info
+    id: String
+    type: String
+}
+
+type block_type_offices {
+    elementMiscData: [KeyValueGraphQL]
+    fullData: full_data_offices
+    id: String
+    type: String
+}
+
+type block_type_offices_aggregate {
+    elementMiscData: [KeyValueGraphQL]
+    fullData: full_data_offices_aggregate
+    id: String
+    subEntity: sub_entity_offices_aggregate
+    type: String
+}
+
+type block_type_offices_info_block {
+    elementMiscData: [KeyValueGraphQL]
+    fullData: full_data_offices_info_block
+    id: String
+    type: String
+}
+
+type block_type_site_control {
+    elementMiscData: [KeyValueGraphQL]
+    fullData: full_data_site_control
+    id: String
+    type: String
+}
+
+type block_type_squares_info_block {
+    elementMiscData: [KeyValueGraphQL]
+    fullData: full_data_squares_info_block
+    id: String
+    type: String
+}
+
+type block_type_stories_block {
+    elementMiscData: [KeyValueGraphQL]
+    fullData: full_data_stories_block
+    id: String
+    type: String
+}
+
+type crud_list_collection__boutique_block {
+    elements: [block_type_boutique_block]
+    totalCount: Int
+}
+
+type crud_list_collection__cities {
+    elements: [block_type_cities]
+    totalCount: Int
+}
+
+type crud_list_collection__contacts {
+    element: block_type_contacts
+}
+
+type crud_list_collection__dream_office_aggregate {
+    element: block_type_dream_office_aggregate
+}
+
+type crud_list_collection__equipment {
+    elements: [block_type_equipment]
+    totalCount: Int
+}
+
+type crud_list_collection__event_hall {
+    elements: [block_type_event_hall]
+    totalCount: Int
+}
+
+type crud_list_collection__event_hall_aggregate {
+    element: block_type_event_hall_aggregate
+}
+
+type crud_list_collection__locations {
+    elements: [block_type_locations]
+    totalCount: Int
+}
+
+type crud_list_collection__locations_aggregate {
+    elements: [block_type_locations_aggregate]
+    totalCount: Int
+}
+
+type crud_list_collection__mainpage_aggregate {
+    element: block_type_mainpage_aggregate
+}
+
+type crud_list_collection__menu_element {
+    elements: [block_type_menu_element]
+    totalCount: Int
+}
+
+type crud_list_collection__metro {
+    elements: [block_type_metro]
+    totalCount: Int
+}
+
+type crud_list_collection__misc_info {
+    element: block_type_misc_info
+}
+
+type crud_list_collection__offices {
+    elements: [block_type_offices]
+    totalCount: Int
+}
+
+type crud_list_collection__offices_aggregate {
+    element: block_type_offices_aggregate
+}
+
+type crud_list_collection__offices_info_block {
+    elements: [block_type_offices_info_block]
+    totalCount: Int
+}
+
+type crud_list_collection__site_control {
+    element: block_type_site_control
+}
+
+type crud_list_collection__squares_info_block {
+    elements: [block_type_squares_info_block]
+    totalCount: Int
+}
+
+type file_crop_data {
+    height: Float
+    rotate: Float
+    scaleX: Float
+    scaleY: Float
+    type: String
+    width: Float
+    x: Float
+    y: Float
+}
+
+type full_data_advantages {
+    "Название"
+    title: String
+}
+
+type full_data_banner_block {
+    "Описание"
+    alt: String
+    "Картинка"
+    image: CrudFieldFile
+}
+
+type full_data_boutique_block {
+    "Ссылка"
+    link: String
+    "Лого"
+    logo: CrudFieldFile
+    "Фото"
+    photo: CrudFieldFile
+    "Текст"
+    text: String
+    "Название"
+    title: String
+}
+
+type full_data_cities {
+    "Название"
+    title: String
+}
+
+type full_data_contacts {
+    "Email"
+    email: String
+    "Facebook"
+    facebook: String
+    "Instagram"
+    instagram: String
+    "Телефон"
+    phone: String
+    "ВК"
+    vk: String
+}
+
+type full_data_dream_office_aggregate {
+    "Название кнопки"
+    button_title: String
+    "Первое фото"
+    photo_1: CrudFieldFile
+    "Фото зачем гибкие 1"
+    photo_2: CrudFieldFile
+    "Фото зачем гибкие 2"
+    photo_3: CrudFieldFile
+    "Фото зачем гибкие 3"
+    photo_4: CrudFieldFile
+    "Текст"
+    text: String
+    "Название"
+    title: String
+}
+
+type full_data_equipment {
+    "Название"
+    title: String
+}
+
+type full_data_event_hall {
+    "Фильтр. Метраж"
+    area: String
+    "Описание"
+    dscr: String
+    "Оборудование"
+    equipment: [String]
+    "Фильтр. Тип мероприятния"
+    filter_event_type: [String]
+    "Фильтр. Количество человек"
+    filter_people_number: String
+    "Ссылка"
+    link: String
+    "Площадки"
+    location: String
+    "Подзаголовок"
+    mainSubtitle: String
+    "Фото"
+    photo: CrudFieldFile
+    "Название"
+    title: String
+}
+
+type full_data_event_hall_aggregate {
+}
+
+type full_data_locations {
+    "Адрес"
+    address: String
+    "Город"
+    cities: String
+    "Описание"
+    description: String
+    "Руководитель. Email"
+    director_email: String
+    "Руководитель. FB"
+    director_fb: String
+    "Руководитель. ФИО"
+    director_fio: String
+    "Руководитель. Instagram"
+    director_instagram: String
+    "Руководитель. Телефон"
+    director_phone: String
+    "Руководитель. ВК"
+    director_vk: String
+    "Геометрия пространства"
+    geometry: CrudFieldFile
+    "Фото"
+    photo: CrudFieldFile
+    "Показывать на главной"
+    show_on_main_page: String
+    "Ссылка"
+    slug: String
+    "Название"
+    title: String
+}
+
+type full_data_locations_aggregate {
+    "Адрес"
+    address: String
+    "Город"
+    cities: String
+    "Описание"
+    description: String
+    "Руководитель. Email"
+    director_email: String
+    "Руководитель. FB"
+    director_fb: String
+    "Руководитель. ФИО"
+    director_fio: String
+    "Руководитель. Instagram"
+    director_instagram: String
+    "Руководитель. Телефон"
+    director_phone: String
+    "Руководитель. ВК"
+    director_vk: String
+    "Геометрия пространства"
+    geometry: CrudFieldFile
+    "Фото"
+    photo: CrudFieldFile
+    "Показывать на главной"
+    show_on_main_page: String
+    "Ссылка"
+    slug: String
+    "Название"
+    title: String
+}
+
+type full_data_mainpage_aggregate {
+    "Boutique текст"
+    boutique_text: String
+    "Boutique заголовок"
+    boutique_title: String
+    "Фотография в блоке площадок для мероприятий"
+    events_locations_photo: CrudFieldFile
+    "Для девелоперов ссылка"
+    for_developers_link: String
+    "Для девелоперов текст"
+    for_developers_text: String
+    "Для девелоперов заголовок"
+    for_developers_title: String
+    "Полное описание"
+    full_desc: String
+    "Loyalty ссылка"
+    loyalty_link: String
+    "Loyalty текст"
+    loyalty_text: String
+    "Loyalty заголовок"
+    loyalty_title: String
+    "Наша миссия"
+    our_mission: String
+    "Промо офис ссылка 1"
+    promo_offices_link_1: String
+    "Промо офис ссылка 2"
+    promo_offices_link_2: String
+    "Промо офис текст 1"
+    promo_offices_text_1: String
+    "Промо офис текст 2"
+    promo_offices_text_2: String
+    "Промо офис заголовок 1"
+    promo_offices_title_1: String
+    "Промо офис заголовок 2"
+    promo_offices_title_2: String
+    "Краткое описание"
+    short_desc: String
+    "Переговорные комнты текст 1"
+    talks_room_text_1: String
+    "Переговорные комнты текст 2"
+    talks_room_text_2: String
+    "Переговорные комнты заголовок 1"
+    talks_room_title_1: String
+    "Переговорные комнты заголовок 2"
+    talks_room_title_2: String
+    "Название"
+    title: String
+}
+
+type full_data_menu_element {
+    "Внешняя ссылка"
+    external: String
+    "Название"
+    title: String
+    "Ссылка"
+    url: String
+}
+
+type full_data_metro {
+    "Название"
+    title: String
+}
+
+type full_data_misc_info {
+    "Презентация. Офисы"
+    presentation_offices: CrudFieldFile
+}
+
+type full_data_offices {
+    "Метраж"
+    area: String
+    "Офис твоей мечты"
+    dream_office: String
+    "Описание"
+    dscr: String
+    "Вместимость"
+    filter_people_number: String
+    "Скрыть"
+    hide: String
+    "Площадки"
+    location: String
+    "Метро"
+    metro: String
+    "Фотография для списка"
+    photo: CrudFieldFile
+    "Спец предложение"
+    special: String
+    "Название"
+    title: String
+}
+
+type full_data_offices_aggregate {
+    "Фото под формой"
+    form_photo: CrudFieldFile
+    "Фото сервисы для резидентов"
+    residents_photo: CrudFieldFile
+}
+
+type full_data_offices_info_block {
+    "Ссылка"
+    link: String
+    "Фото"
+    photo: CrudFieldFile
+    "Текст"
+    text: String
+    "Название"
+    title: String
+}
+
+type full_data_site_control {
+    "Название"
+    title: String
+}
+
+type full_data_squares_info_block {
+    "Текст"
+    text: String
+    "Название"
+    title: String
+    "Тип"
+    type: String
+}
+
+type full_data_stories_block {
+    "Описание"
+    description: String
+    "Фотография"
+    photo: CrudFieldFile
+    "Название"
+    title: String
+}
+
+type sub_entity_dream_office_aggregate {
+    "Преимущества"
+    advantages(fullData: input_data_advantages, sortData: sort_dataadvantages): [block_type_advantages]
+}
+
+type sub_entity_event_hall_aggregate {
+    "Баннер"
+    banner_block(fullData: input_data_banner_block, sortData: sort_databanner_block): [block_type_banner_block]
+}
+
+type sub_entity_locations_aggregate {
+    "Сторис"
+    stories_block(fullData: input_data_stories_block, sortData: sort_datastories_block): [block_type_stories_block]
+}
+
+type sub_entity_mainpage_aggregate {
+    "Верхнее меню"
+    top(fullData: input_data_menu_element, sortData: sort_datamenu_element): [block_type_menu_element]
+}
+
+type sub_entity_offices_aggregate {
+    "Баннер"
+    banner_block(fullData: input_data_banner_block, sortData: sort_databanner_block): [block_type_banner_block]
+}
+
+input input_data_advantages {
+    "Название"
+    title: String
+}
+
+input input_data_banner_block {
+    "Описание"
+    alt: String
+}
+
+input input_data_boutique_block {
+    "Ссылка"
+    link: String
+    "Текст"
+    text: String
+    "Название"
+    title: String
+}
+
+input input_data_cities {
+    "Название"
+    title: String
+}
+
+input input_data_contacts {
+    "Email"
+    email: String
+    "Facebook"
+    facebook: String
+    "Instagram"
+    instagram: String
+    "Телефон"
+    phone: String
+    "ВК"
+    vk: String
+}
+
+input input_data_dream_office_aggregate {
+    "Название кнопки"
+    button_title: String
+    "Текст"
+    text: String
+    "Название"
+    title: String
+}
+
+input input_data_equipment {
+    "Название"
+    title: String
+}
+
+input input_data_event_hall {
+    "Фильтр. Метраж"
+    area: String
+    "Описание"
+    dscr: String
+    "Фильтр. Количество человек"
+    filter_people_number: String
+    "Ссылка"
+    link: String
+    "Площадки"
+    location: String
+    "Подзаголовок"
+    mainSubtitle: String
+    "Название"
+    title: String
+}
+
+input input_data_event_hall_aggregate {
+}
+
+input input_data_locations {
+    "Адрес"
+    address: String
+    "Город"
+    cities: String
+    "Описание"
+    description: String
+    "Руководитель. Email"
+    director_email: String
+    "Руководитель. FB"
+    director_fb: String
+    "Руководитель. ФИО"
+    director_fio: String
+    "Руководитель. Instagram"
+    director_instagram: String
+    "Руководитель. Телефон"
+    director_phone: String
+    "Руководитель. ВК"
+    director_vk: String
+    "Показывать на главной"
+    show_on_main_page: String
+    "Ссылка"
+    slug: String
+    "Название"
+    title: String
+}
+
+input input_data_locations_aggregate {
+    "Адрес"
+    address: String
+    "Город"
+    cities: String
+    "Описание"
+    description: String
+    "Руководитель. Email"
+    director_email: String
+    "Руководитель. FB"
+    director_fb: String
+    "Руководитель. ФИО"
+    director_fio: String
+    "Руководитель. Instagram"
+    director_instagram: String
+    "Руководитель. Телефон"
+    director_phone: String
+    "Руководитель. ВК"
+    director_vk: String
+    "Показывать на главной"
+    show_on_main_page: String
+    "Ссылка"
+    slug: String
+    "Название"
+    title: String
+}
+
+input input_data_mainpage_aggregate {
+    "Boutique текст"
+    boutique_text: String
+    "Boutique заголовок"
+    boutique_title: String
+    "Для девелоперов ссылка"
+    for_developers_link: String
+    "Для девелоперов текст"
+    for_developers_text: String
+    "Для девелоперов заголовок"
+    for_developers_title: String
+    "Полное описание"
+    full_desc: String
+    "Loyalty ссылка"
+    loyalty_link: String
+    "Loyalty текст"
+    loyalty_text: String
+    "Loyalty заголовок"
+    loyalty_title: String
+    "Наша миссия"
+    our_mission: String
+    "Промо офис ссылка 1"
+    promo_offices_link_1: String
+    "Промо офис ссылка 2"
+    promo_offices_link_2: String
+    "Промо офис текст 1"
+    promo_offices_text_1: String
+    "Промо офис текст 2"
+    promo_offices_text_2: String
+    "Промо офис заголовок 1"
+    promo_offices_title_1: String
+    "Промо офис заголовок 2"
+    promo_offices_title_2: String
+    "Краткое описание"
+    short_desc: String
+    "Переговорные комнты текст 1"
+    talks_room_text_1: String
+    "Переговорные комнты текст 2"
+    talks_room_text_2: String
+    "Переговорные комнты заголовок 1"
+    talks_room_title_1: String
+    "Переговорные комнты заголовок 2"
+    talks_room_title_2: String
+    "Название"
+    title: String
+}
+
+input input_data_menu_element {
+    "Внешняя ссылка"
+    external: String
+    "Название"
+    title: String
+    "Ссылка"
+    url: String
+}
+
+input input_data_metro {
+    "Название"
+    title: String
+}
+
+input input_data_misc_info {
+}
+
+input input_data_offices {
+    "Метраж"
+    area: String
+    "Офис твоей мечты"
+    dream_office: String
+    "Описание"
+    dscr: String
+    "Вместимость"
+    filter_people_number: String
+    "Скрыть"
+    hide: String
+    "Площадки"
+    location: String
+    "Метро"
+    metro: String
+    "Спец предложение"
+    special: String
+    "Название"
+    title: String
+}
+
+input input_data_offices_aggregate {
+}
+
+input input_data_offices_info_block {
+    "Ссылка"
+    link: String
+    "Текст"
+    text: String
+    "Название"
+    title: String
+}
+
+input input_data_site_control {
+    "Название"
+    title: String
+}
+
+input input_data_squares_info_block {
+    "Текст"
+    text: String
+    "Название"
+    title: String
+    "Тип"
+    type: String
+}
+
+input input_data_stories_block {
+    "Описание"
+    description: String
+    "Название"
+    title: String
+}
+
+input pagination_type {
+    page: Int
+    perPage: Int
+}
+
+input sort_dataadvantages {
+    "Название"
+    title: String
+}
+
+input sort_databanner_block {
+    "Описание"
+    alt: String
+}
+
+input sort_databoutique_block {
+    "Ссылка"
+    link: String
+    "Текст"
+    text: String
+    "Название"
+    title: String
+}
+
+input sort_datacities {
+    "Название"
+    title: String
+}
+
+input sort_datacontacts {
+    "Email"
+    email: String
+    "Facebook"
+    facebook: String
+    "Instagram"
+    instagram: String
+    "Телефон"
+    phone: String
+    "ВК"
+    vk: String
+}
+
+input sort_datadream_office_aggregate {
+    "Название кнопки"
+    button_title: String
+    "Текст"
+    text: String
+    "Название"
+    title: String
+}
+
+input sort_dataequipment {
+    "Название"
+    title: String
+}
+
+input sort_dataevent_hall {
+    "Фильтр. Метраж"
+    area: String
+    "Описание"
+    dscr: String
+    "Фильтр. Количество человек"
+    filter_people_number: String
+    "Ссылка"
+    link: String
+    "Площадки"
+    location: String
+    "Подзаголовок"
+    mainSubtitle: String
+    "Название"
+    title: String
+}
+
+input sort_dataevent_hall_aggregate {
+}
+
+input sort_datalocations {
+    "Адрес"
+    address: String
+    "Город"
+    cities: String
+    "Описание"
+    description: String
+    "Руководитель. Email"
+    director_email: String
+    "Руководитель. FB"
+    director_fb: String
+    "Руководитель. ФИО"
+    director_fio: String
+    "Руководитель. Instagram"
+    director_instagram: String
+    "Руководитель. Телефон"
+    director_phone: String
+    "Руководитель. ВК"
+    director_vk: String
+    "Показывать на главной"
+    show_on_main_page: String
+    "Ссылка"
+    slug: String
+    "Название"
+    title: String
+}
+
+input sort_datalocations_aggregate {
+    "Адрес"
+    address: String
+    "Город"
+    cities: String
+    "Описание"
+    description: String
+    "Руководитель. Email"
+    director_email: String
+    "Руководитель. FB"
+    director_fb: String
+    "Руководитель. ФИО"
+    director_fio: String
+    "Руководитель. Instagram"
+    director_instagram: String
+    "Руководитель. Телефон"
+    director_phone: String
+    "Руководитель. ВК"
+    director_vk: String
+    "Показывать на главной"
+    show_on_main_page: String
+    "Ссылка"
+    slug: String
+    "Название"
+    title: String
+}
+
+input sort_datamainpage_aggregate {
+    "Boutique текст"
+    boutique_text: String
+    "Boutique заголовок"
+    boutique_title: String
+    "Для девелоперов ссылка"
+    for_developers_link: String
+    "Для девелоперов текст"
+    for_developers_text: String
+    "Для девелоперов заголовок"
+    for_developers_title: String
+    "Полное описание"
+    full_desc: String
+    "Loyalty ссылка"
+    loyalty_link: String
+    "Loyalty текст"
+    loyalty_text: String
+    "Loyalty заголовок"
+    loyalty_title: String
+    "Наша миссия"
+    our_mission: String
+    "Промо офис ссылка 1"
+    promo_offices_link_1: String
+    "Промо офис ссылка 2"
+    promo_offices_link_2: String
+    "Промо офис текст 1"
+    promo_offices_text_1: String
+    "Промо офис текст 2"
+    promo_offices_text_2: String
+    "Промо офис заголовок 1"
+    promo_offices_title_1: String
+    "Промо офис заголовок 2"
+    promo_offices_title_2: String
+    "Краткое описание"
+    short_desc: String
+    "Переговорные комнты текст 1"
+    talks_room_text_1: String
+    "Переговорные комнты текст 2"
+    talks_room_text_2: String
+    "Переговорные комнты заголовок 1"
+    talks_room_title_1: String
+    "Переговорные комнты заголовок 2"
+    talks_room_title_2: String
+    "Название"
+    title: String
+}
+
+input sort_datamenu_element {
+    "Внешняя ссылка"
+    external: String
+    "Название"
+    title: String
+    "Ссылка"
+    url: String
+}
+
+input sort_datametro {
+    "Название"
+    title: String
+}
+
+input sort_datamisc_info {
+}
+
+input sort_dataoffices {
+    "Метраж"
+    area: String
+    "Офис твоей мечты"
+    dream_office: String
+    "Описание"
+    dscr: String
+    "Вместимость"
+    filter_people_number: String
+    "Скрыть"
+    hide: String
+    "Площадки"
+    location: String
+    "Метро"
+    metro: String
+    "Спец предложение"
+    special: String
+    "Название"
+    title: String
+}
+
+input sort_dataoffices_aggregate {
+}
+
+input sort_dataoffices_info_block {
+    "Ссылка"
+    link: String
+    "Текст"
+    text: String
+    "Название"
+    title: String
+}
+
+input sort_datasite_control {
+    "Название"
+    title: String
+}
+
+input sort_datasquares_info_block {
+    "Текст"
+    text: String
+    "Название"
+    title: String
+    "Тип"
+    type: String
+}
+
+input sort_datastories_block {
+    "Описание"
+    description: String
+    "Название"
+    title: String
+}
